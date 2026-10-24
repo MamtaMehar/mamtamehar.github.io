@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Mamta Mehar — climate and development scientist specialising in research, evaluation, evidence synthesis and climate adaptation.">
+  <title>Dr. Mamta Mehar | Research & Climate Policy</title>
+  <style>
+    :root {
+      --ink: #202c32;
+      --muted: #64747a;
+      --green: #286653;
+      --pale: #eef4f0;
+      --line: #dce5df;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.7;
+    }
+    a { color: var(--green); }
+    .wrap { width: min(1040px, 88%); margin: auto; }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.96);
+    }
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .navlinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 19px;
+    }
+    .navlinks a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .navlinks a:hover { color: var(--green); }
+
+    .hero {
+      padding: 94px 0 80px;
+      background: linear-gradient(120deg, #f0f5f1, #fff 75%);
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 68px);
+      line-height: 1.1;
+      letter-spacing: -1.8px;
+      font-weight: 500;
+      margin: 18px 0;
+    }
+    .subtitle {
+      font-size: clamp(18px, 3vw, 23px);
+      color: var(--green);
+      max-width: 760px;
+      line-height: 1.5;
+    }
+    .intro { max-width: 740px; color: #4d5c61; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border: 1px solid var(--green);
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .primary { background: var(--green); color: white; }
+    .secondary { color: var(--green); }
+
+    section { padding: 68px 0; border-bottom: 1px solid var(--line); }
+    .section-label {
+      color: var(--green);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 4vw, 40px);
+      line-height: 1.2;
+      font-weight: 500;
+      margin: 8px 0 24px;
+    }
+    h3 { font-size: 18px; margin: 0 0 8px; }
+    p { margin-top: 0; }
+    .body-copy { max-width: 780px; color: #526168; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: white;
+    }
+    .card p { color: var(--muted); margin-bottom: 0; font-size: 14px; }
+    .tag {
+      display: inline-block;
+      color: var(--green);
+      background: var(--pale);
+      padding: 4px 8px;
+      border-radius: 3px;
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+    .skills { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 20px; }
+    .skills span {
+      padding: 7px 12px;
+      background: var(--pale);
+      color: #355d4f;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+    .timeline { border-left: 2px solid var(--line); padding-left: 22px; margin: 24px 0; }
+    .timeline p { color: var(--muted); margin-bottom: 22px; }
+    .note { font-size: 13px; color: var(--muted); }
+    .contact { background: #f5f8f5; }
+    footer { padding: 25px 0; color: var(--muted); font-size: 12px; }
+
+    @media (max-width: 650px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 18px 0; }
+      .navlinks { gap: 12px; }
+      .hero { padding: 62px 0; }
+      section { padding: 48px 0; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">Mamta Mehar</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Research · Evaluation · Policy</div>
+        <h1>Dr. Mamta Mehar</h1>
+        <div class="subtitle">
+          Climate, Development Economics &amp; Evidence for Policy
+        </div>
+        <p class="intro">
+          An interdisciplinary climate and development scientist with a
+          Ph.D. in Economics and over 19 years of international research,
+          evaluation and advisory experience.
+        </p>
+        <p class="intro">
+          Advancing evidence for climate adaptation, resilient agri-food
+          systems and inclusive development across Asia and Africa.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#research">Explore my work</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-label">01 / About</div>
+        <h2>Research that informs decisions</h2>
+        <div class="body-copy">
+          <p>
+            My work sits at the intersection of development economics,
+            agricultural innovation, climate change and public policy.
+            I bring interdisciplinary research and evaluation experience
+            to questions about how evidence can support better decisions
+            for farmers, institutions and development partners.
+          </p>
+          <p>
+            I have worked with CGIAR research centres, including IRRI,
+            ILRI, IFPRI, CIMMYT and WorldFish. My research has examined
+            technology adoption, farmer behaviour, gender-responsive
+            innovation, impact assessment and sustainability transitions.
+          </p>
+          <p>
+            My recent focus includes climate adaptation and mitigation,
+            evidence synthesis, and policy-oriented research for resilient
+            and low-emission agri-food systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="section-label">02 / Selected work</div>
+        <h2>Research &amp; projects</h2>
+        <p class="body-copy">
+          Selected areas of work across climate science, agricultural
+          development and evidence-informed policy. Detailed project
+          records and publication links can be added as they are verified.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <span class="tag">Climate adaptation</span>
+            <h3>Climate risk and resilient agriculture</h3>
+            <p>
+              Research on drought and heat stress, climate impacts,
+              adaptation pathways and resilience in agri-food systems.
+            </p>
+          </article>
+          <article class="card">
+            <span class="tag">Evidence synthesis</span>
+            <h3>Systematic and topical reviews</h3>
+            <p>
+              Evidence synthesis to assess research trends, adaptation
+              options, outcomes, evidence gaps and implications for policy.
+            </p>
+          </article>
+          <article class="card">
+            <span class="tag">Evaluation</span>
+            <h3>Development programme evaluation</h3>
+            <p>
+              Evaluation and impact assessment focused on programme
+              effectiveness, outcomes, learning and recommendations.
+            </p>
+          </article>
+          <article class="card">
+            <span class="tag">Innovation &amp; adoption</span>
+            <h3>Agricultural technology and inclusion</h3>
+            <p>
+              Research on farmer adoption behaviour, gender-responsive
+              innovation and pathways to sustainable development.
+            </p>
+          </article>
+          <article class="card">
+            <span class="tag">Policy &amp; investment</span>
+            <h3>Evidence for adaptation decisions</h3>
+            <p>
+              Translating climate and development evidence into locally
+              relevant decisions, policy recommendations and investments.
+            </p>
+          </article>
+          <article class="card">
+            <span class="tag">International consulting</span>
+            <h3>Research and advisory assignments</h3>
+            <p>
+              Interdisciplinary research, analytical support and advisory
+              work for development research and policy stakeholders.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-label">03 / Experience</div>
+        <h2>International research &amp; consulting</h2>
+        <div class="body-copy">
+          <p>
+            More than 19 years of research, evaluation and advisory work
+            across agricultural development, climate resilience and
+            evidence-informed policy.
+          </p>
+        </div>
+        <div class="timeline">
+          <h3>CGIAR research centres</h3>
+          <p>
+            Research and interdisciplinary collaboration across IRRI,
+            ILRI, IFPRI, CIMMYT and WorldFish.
+          </p>
+          <h3>Evaluation &amp; development research</h3>
+          <p>
+            Programme evaluation, impact assessment, research synthesis
+            and policy-oriented analysis.
+          </p>
+          <h3>Climate &amp; policy engagement</h3>
+          <p>
+            Work connecting climate risks, adaptation evidence,
+            resilient agri-food systems and decision-making.
+          </p>
+        </div>
+        <p class="note">
+          Specific roles, employers, dates and project details will be
+          added after checking the information against the current CV.
+        </p>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="wrap">
+        <div class="section-label">04 / Expertise</div>
+        <h2>Methods &amp; areas of focus</h2>
+        <div class="body-copy">
+          My approach combines economic analysis, interdisciplinary
+          research, evaluation methods and structured evidence review.
+        </div>
+        <div class="skills">
+          <span>Development Economics</span>
+          <span>Climate Adaptation</span>
+          <span>Impact Evaluation</span>
+          <span>Evidence Synthesis</span>
+          <span>Systematic Reviews</span>
+          <span>Technology Adoption</span>
+          <span>Gender &amp; Inclusion</span>
+          <span>Agricultural Development</span>
+          <span>Policy Analysis</span>
+          <span>Research Methods</span>
+          <span>Data Analysis</span>
+          <span>Low-Emission Food Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <div class="section-label">05 / Education</div>
+        <h2>Education &amp; professional development</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Ph.D. in Economics</h3>
+            <p>Doctoral qualification in economics.</p>
+          </article>
+          <article class="card">
+            <h3>Postgraduate training</h3>
+            <p>M.Phil. and M.A. in Economics.</p>
+          </article>
+          <article class="card">
+            <h3>Data science &amp; analytics</h3>
+            <p>Professional training in data science, machine learning and AI.</p>
+          </article>
+          <article class="card">
+            <h3>Research &amp; policy</h3>
+            <p>International research, evaluation and advisory experience.</p>
+          </article>
+        </div>
+        <p class="note">
+          Institutions, dates and qualifications should be checked and
+          completed before the final public version.
+        </p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="wrap">
+        <div class="section-label">06 / Publications</div>
+        <h2>Selected publications &amp; writing</h2>
+        <p class="body-copy">
+          This section will showcase peer-reviewed research, evaluation
+          reports, evidence reviews and presentations. Add verified titles,
+          publication years and links to the final outputs here.
+        </p>
+        <p>
+          <a href="#contact">Contact me for research and consulting enquiries.</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="section-label">07 / Contact</div>
+        <h2>Let's connect</h2>
+        <p class="body-copy">
+          I welcome professional enquiries and opportunities for research
+          collaboration, evaluation, evidence synthesis and climate policy
+          advisory work.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn secondary" href="mailto:">Email me — add your address</a>
+        </div>
+        <p class="note">
+          Before publishing, replace the LinkedIn link with your profile
+          URL and add your professional email address.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year">2026</span> Dr. Mamta Mehar · Research, evaluation &amp; climate policy
+    </div>
+  </footer>
+</body>
+</html>
