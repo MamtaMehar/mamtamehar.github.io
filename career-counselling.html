@@ -2,129 +2,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Career Counselling & Higher Education | Dr. Mamta Mehar</title>
+<title>Career Counselling | Dr. Mamta Mehar</title>
 
-  <meta name="description" content="Dr. Mamta Mehar, Certified Career Counsellor, curriculum developer, academic mentor and international development professional.">
+<meta name="description" content="Career counselling, academic guidance and professional mentoring by Dr. Mamta Mehar, Certified Career Counsellor.">
 
-  <style>
-    body {
-      max-width: 900px;
-      margin: 45px auto;
-      padding: 0 22px;
-      color: #222;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.8;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 17px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
+body {
+  margin: 0;
+  color: #29232d;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+  background: linear-gradient(
+    135deg,
+    #fff9f4,
+    #f8eafa,
+    #fff0ed
+  );
+}
 
-    a {
-      color: #315d80;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
+nav {
+  background: rgba(255,255,255,0.92);
+  padding: 18px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  border-bottom: 1px solid #eee1ee;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
 
-    a:hover {
-      color: #163c5b;
-    }
+nav a {
+  color: #49364e;
+  text-decoration: none;
+}
 
-    h1 {
-      font-size: 38px;
-      line-height: 1.2;
-      margin-top: 40px;
-    }
+nav a:hover {
+  color: #b34cbf;
+}
 
-    h2 {
-      font-size: 23px;
-      margin-top: 35px;
-      margin-bottom: 12px;
-    }
+.container {
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 20px;
+}
 
-    h3 {
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
+.hero {
+  text-align: center;
+  padding: 35px 20px 25px;
+}
 
-    .subtitle {
-      color: #666;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-    }
+.brand {
+  font-size: 19px;
+  letter-spacing: 4px;
+  color: #705275;
+  margin-bottom: 30px;
+}
 
-    .section {
-      margin-top: 35px;
-    }
+h1 {
+  font-size: clamp(38px, 7vw, 64px);
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+  color: #242027;
+}
 
-    .credential {
-      padding: 18px 0;
-      border-top: 1px solid #e5e5e5;
-      border-bottom: 1px solid #e5e5e5;
-    }
+.tagline {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
 
-    .highlights {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-      margin: 25px 0;
-    }
+.intro {
+  max-width: 680px;
+  margin: auto;
+  color: #625966;
+  font-size: 16px;
+}
 
-    .highlight {
-      border-left: 3px solid #315d80;
-      padding: 8px 15px;
-      background: #f7f8fa;
-    }
+.line {
+  height: 4px;
+  width: 65%;
+  max-width: 500px;
+  margin: 25px auto;
+  background: linear-gradient(
+    90deg,
+    #c65bd4,
+    #f5b8ce,
+    #f6d19a
+  );
+  border-radius: 5px;
+}
 
-    .highlight strong {
-      display: block;
-      font-size: 23px;
-      color: #244e70;
-    }
+.section {
+  background: white;
+  border-radius: 25px;
+  padding: 30px 35px;
+  margin: 24px 0;
+  box-shadow: 0 8px 25px rgba(100,60,100,0.06);
+}
 
-    .highlight span {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: #555;
-    }
+.section h2 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #49344e;
+}
 
-    li {
-      margin-bottom: 9px;
-    }
+ul {
+  padding-left: 24px;
+  margin-bottom: 0;
+}
 
-    .contact {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-    }
+li {
+  padding: 4px 0;
+}
 
-    .small {
-      color: #666;
-      font-size: 14px;
-    }
+.why {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 25px;
+}
 
-    @media (max-width: 600px) {
-      .highlights {
-        grid-template-columns: 1fr;
-      }
+.why-item {
+  font-size: 15px;
+}
 
-      h1 {
-        font-size: 32px;
-      }
-    }
-  </style>
+.check {
+  color: #6b9c67;
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+.certification {
+  text-align: center;
+  padding: 20px;
+}
+
+.certification h2 {
+  margin-bottom: 8px;
+}
+
+.profile-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #87469b;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.highlight {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #d36bdc,
+    #f2b5d3,
+    #f5d29d
+  );
+  color: #302037;
+  padding: 13px;
+  border-radius: 30px;
+  margin: 25px 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 12px;
+}
+
+.contact p {
+  margin: 7px 0;
+}
+
+.contact a {
+  color: #6e3d83;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    #cb66d8,
+    #f4c4aa
+  );
+  color: #29202d !important;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #756b78;
+  font-size: 13px;
+}
+
+@media(max-width: 650px) {
+  .container {
+    padding: 10px;
+    margin: 15px auto;
+  }
+
+  .section {
+    padding: 24px 20px;
+  }
+
+  .why {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    letter-spacing: 2px;
+  }
+
+  nav {
+    gap: 13px;
+  }
+}
+</style>
 </head>
 
 <body>
+
+<!-- NAVIGATION -->
 
 <nav>
   <a href="index.html">Home</a>
@@ -135,239 +252,183 @@
   <a href="career-counselling.html">Career Counselling</a>
 </nav>
 
-<main>
+<main class="container">
 
-<!-- PAGE TITLE -->
+  <!-- INTRODUCTION -->
 
-<h1>Career Counselling, Higher Education & Professional Development</h1>
+  <section class="hero">
 
-<p class="subtitle">
-  Career guidance | Curriculum development | Academic mentoring |
-  Professional development
-</p>
-
-<!-- PROFESSIONAL CERTIFICATION AT THE TOP -->
-
-<div class="section">
-  <h2>Professional Certification</h2>
-
-  <p>
-    <strong>
-      Certified Career Counsellor (International Certification)
-    </strong>,
-    EduMilestones
-  </p>
-
-  <p>
-    <strong>Professional Profile:</strong>
-    <a href="https://www.edumilestones.com/career-counsellor/Dr-Mamta-Mehar"
-       target="_blank"
-       rel="noopener noreferrer">
-      View My EduMilestones Career Counsellor Profile ↗
-    </a>
-  </p>
-</div>
-
-<!-- INTRODUCTION -->
-
-<div class="section">
-  <p>
-    I am a Certified Career Counsellor with an interdisciplinary
-    academic and professional background in Economics, higher
-    education, research and international development. I combine
-    formal career counselling training with extensive experience
-    in curriculum development, academic mentoring, professional
-    training and international research.
-  </p>
-
-  <p>
-    I have guided more than 700 students and parents through
-    structured career assessments and mentoring, alongside
-    contributing to higher education curriculum development,
-    academic supervision and professional capacity building.
-  </p>
-</div>
-
-<!-- PROFESSIONAL HIGHLIGHTS -->
-
-<div class="section">
-  <h2>Professional Highlights</h2>
-
-  <div class="highlights">
-
-    <div class="highlight">
-      <strong>18+ years</strong>
-      <span>Professional experience</span>
+    <div class="brand">
+      SHRISHTI ANSHIN
     </div>
 
-    <div class="highlight">
-      <strong>13 countries</strong>
-      <span>International work experience</span>
+    <h1>CAREER<br>COUNSELLING</h1>
+
+    <div class="line"></div>
+
+    <p class="tagline">
+      Create a Peaceful Path to Your Dream Career
+    </p>
+
+    <p class="intro">
+      Personalised career guidance, academic mentoring and
+      professional direction to help individuals make informed
+      choices about their future.
+    </p>
+
+  </section>
+
+  <!-- WHO CAN BENEFIT -->
+
+  <section class="section">
+
+    <h2>Who Can Benefit?</h2>
+
+    <ul>
+      <li>Students from Classes 8 to 12 (CBSE, ICSE and other boards)</li>
+      <li>Parents seeking guidance for their children</li>
+      <li>Undergraduate and Master's students</li>
+      <li>Graduates exploring higher education opportunities</li>
+      <li>Professionals in the early stages of their careers</li>
+    </ul>
+
+  </section>
+
+  <!-- WHY CHOOSE ME -->
+
+  <section class="section">
+
+    <h2>Why Choose Dr. Mamta Mehar?</h2>
+
+    <div class="why">
+
+      <div class="why-item">
+        <span class="check">✓</span>
+        Explore 3,000+ career options
+      </div>
+
+      <div class="why-item">
+        <span class="check">✓</span>
+        Structured career assessments
+      </div>
+
+      <div class="why-item">
+        <span class="check">✓</span>
+        Personalised counselling and mentoring
+      </div>
+
+      <div class="why-item">
+        <span class="check">✓</span>
+        Higher education guidance
+      </div>
+
+      <div class="why-item">
+        <span class="check">✓</span>
+        Academic and research career guidance
+      </div>
+
+      <div class="why-item">
+        <span class="check">✓</span>
+        International professional experience
+      </div>
+
     </div>
 
-    <div class="highlight">
-      <strong>10 years</strong>
-      <span>Experience with CGIAR</span>
-    </div>
+  </section>
 
-    <div class="highlight">
-      <strong>5,000+</strong>
-      <span>Professionals trained</span>
-    </div>
+  <!-- PROFESSIONAL PROFILE -->
 
-    <div class="highlight">
-      <strong>700+</strong>
-      <span>Students counselled</span>
-    </div>
-
-    <div class="highlight">
-      <strong>2 PhD + 1 MPhil</strong>
-      <span>External academic supervision</span>
-    </div>
-
+  <div class="highlight">
+    Dr. Mamta Mehar | 18+ Years of International Experience
   </div>
-</div>
 
-<!-- CURRICULUM DEVELOPMENT -->
+  <!-- CERTIFICATION -->
 
-<div class="section">
-  <h2>Curriculum Development & Higher Education</h2>
+  <section class="section certification">
 
-  <ul>
-    <li>
-      Developed university curriculum for IGNOU, including
-      Mainstreaming Gender and BA Economics programmes.
-    </li>
+    <h2>Professional Certification</h2>
 
-    <li>
-      Served as External Supervisor for PhD scholars.
-    </li>
+    <p>
+      <strong>Certified Career Counsellor</strong>
+    </p>
 
-    <li>
-      Delivered lectures at IGNOU (India), Auburn University
-      (USA) and other international institutions.
-    </li>
+    <p>
+      International Certification — EduMilestones
+    </p>
 
-    <li>
-      Developed research methods and capacity-building modules.
-    </li>
-
-    <li>
-      Designed training materials and technical guidance documents.
-    </li>
-  </ul>
-</div>
-
-<!-- CAREER GUIDANCE -->
-
-<div class="section">
-  <h2>Career Guidance & Academic Mentoring</h2>
-
-  <ul>
-    <li>
-      Provided career counselling and higher education guidance
-      to more than <strong>700 students and parents</strong>
-      through structured career assessments and mentoring.
-    </li>
-
-    <li>
-      Supervised <strong>2 PhD and 1 MPhil scholar</strong>
-      as an external academic supervisor.
-    </li>
-
-    <li>
-      Supported academic and professional development through
-      guidance on education pathways, research opportunities
-      and career planning.
-    </li>
-  </ul>
-</div>
-
-<!-- CAREER GUIDANCE AREAS -->
-
-<div class="section">
-  <h2>Career Guidance Areas</h2>
-
-  <h3>Career Exploration and Planning</h3>
-  <p>
-    Helping individuals understand their interests, explore
-    suitable career pathways and make informed education
-    and career choices.
-  </p>
-
-  <h3>Academic and Higher Education Guidance</h3>
-  <p>
-    Guidance on undergraduate and postgraduate education,
-    academic pathways, research opportunities and further study.
-  </p>
-
-  <h3>Research and Academic Careers</h3>
-  <p>
-    Supporting aspiring researchers and academics in exploring
-    research careers, academic opportunities and international
-    development-sector pathways.
-  </p>
-
-  <h3>Professional Development</h3>
-  <p>
-    Career planning, professional transitions, opportunity
-    identification and development of career goals.
-  </p>
-</div>
-
-<!-- ACADEMIC BACKGROUND -->
-
-<div class="section">
-  <h2>Academic Background</h2>
-
-  <ul>
-    <li>Ph.D. in Economics.</li>
-    <li>Master's degree in Economics, Delhi School of Economics.</li>
-    <li>Graduate degree, University of Delhi.</li>
-  </ul>
-</div>
-
-<!-- CONTACT -->
-
-<div class="contact">
-  <h2>Connect for Career Guidance</h2>
-
-  <p>
-    For career counselling, academic mentoring, higher education
-    guidance and professional development enquiries, please get
-    in touch.
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:mamta.dse@gmail.com">
-      mamta.dse@gmail.com
-    </a>
-  </p>
-
-  <p>
-    <strong>EduMilestones Professional Profile:</strong>
-    <a href="https://www.edumilestones.com/career-counsellor/Dr-Mamta-Mehar"
+    <a class="profile-link"
+       href="https://www.edumilestones.com/career-counsellor/Dr-Mamta-Mehar"
        target="_blank"
        rel="noopener noreferrer">
-      https://www.edumilestones.com/career-counsellor/Dr-Mamta-Mehar
+       View EduMilestones Professional Profile ↗
     </a>
-  </p>
 
-  <p>
-    <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/mamta-mehar-a59a485/"
-       target="_blank"
-       rel="noopener noreferrer">
-      Connect on LinkedIn ↗
+  </section>
+
+  <!-- EXPERIENCE -->
+
+  <section class="section">
+
+    <h2>Academic & Professional Background</h2>
+
+    <ul>
+      <li>Ph.D. in Economics.</li>
+      <li>Master's degree in Economics, Delhi School of Economics.</li>
+      <li>Curriculum development for IGNOU programmes.</li>
+      <li>Lectures at IGNOU, Auburn University (USA) and other institutions.</li>
+      <li>External supervision of PhD and MPhil scholars.</li>
+      <li>Research methods, capacity building and professional training.</li>
+      <li>Experience across 13 countries, as stated in my professional profile.</li>
+    </ul>
+
+    <p>
+      I have also guided 700+ students and parents through career
+      counselling, higher education guidance and mentoring.
+    </p>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section contact">
+
+    <h2>Let's Connect</h2>
+
+    <p>
+      For career counselling, academic guidance and professional
+      development enquiries:
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:mamta.dse@gmail.com">
+        mamta.dse@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/mamta-mehar-a59a485/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Connect with me ↗
+      </a>
+    </p>
+
+    <a class="contact-button"
+       href="mailto:mamta.dse@gmail.com">
+       Contact for Career Guidance
     </a>
-  </p>
 
-  <p>
-    <a href="index.html">← Back to homepage</a>
-  </p>
-</div>
+  </section>
 
 </main>
+
+<footer>
+  © 2026 Dr. Mamta Mehar | Career Counselling & Professional Guidance
+  <br>
+  <a href="index.html">Back to Main Website</a>
+</footer>
+
 </body>
 </html>
